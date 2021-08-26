@@ -1,0 +1,65 @@
+// navbar 
+.navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   background-color: $bgSection;
+
+   &__logo {
+      
+      text-decoration: none;
+
+      &-link {
+         width: 79px;
+         height: 79px;
+
+         display: block;
+      }
+   }
+
+   &__nav-btn {
+      display: none;
+   }
+
+   &__button {
+     @include buttonBuy(14px, 50px, 5px, $bgButton, $ffHindModurai, 16px, 700, $fontLight);
+     border: 2px solid transparent;
+     
+     transition: 0.5s;
+      
+     &:hover {
+        @extend %button-hover;
+     }
+
+   }
+}
+
+// menu
+.nav-menu {
+   margin: 0;
+   padding: 0;
+
+   display: flex;
+   align-items: center;
+
+   &__link {
+      margin: 0 20px;
+
+      opacity: 0.6;
+
+      font-family: $ffRoboto;
+      font-size: 14px;
+      text-decoration: none;
+      color: $fontDark;
+
+      &._active {
+         @extend %nav-link_action
+      }
+
+      &:hover {
+         @extend %nav-link_action
+      }
+
+   }
+}

@@ -1,0 +1,164 @@
+// footer
+.footer {
+   
+   &__logo {
+      width: 79px;
+      height: 79px;
+
+      display: block;
+   }
+
+   &__text-box {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+   }
+}
+
+.info {
+
+   &__paragraph {
+      max-width: 207px;
+      margin: 10px 0 25px;
+
+      @include fontGroup($ffRoboto, 12px, 400, 140%, $fontWhite);
+      opacity: 0.7;
+
+   } 
+
+   &__heading {
+      margin: 0 0 8px;
+
+      @include fontGroup($ffRoboto, 12px, 500, 110%, $fontWhite);
+   }
+}
+
+.social {
+   display: flex;
+   align-items: center;
+
+   &__link {
+      margin: 0 10px 0 0;
+      text-decoration: none;
+   }
+
+   &__icon {
+      width: 15px;
+      height: 15px;
+      display: block;
+
+      transition: 0.4s;
+
+      &:hover {
+         transform: translateY(-2px);
+      }
+   }
+}
+
+.navigation {
+   display: flex;
+   align-items: flex-start;
+
+   &__column {
+      padding: 0 30px;
+
+      display: flex;
+      flex-flow: column;
+   }
+
+   &__link {
+      margin: 0 0 10px;
+
+      @include fontGroup($ffRoboto, 12px, 400, 1, $fontWhite);
+      text-decoration: none;
+      opacity: 0.7;
+
+      transition: 0.4s;
+
+      &:hover {
+         opacity: 1;
+      }
+   }
+}
+
+.subscription {
+
+   &__heading {
+      margin: 0 0 13px;
+
+      @include fontGroup($ffRoboto, 16px, 500, 19px, $fontWhite);
+   }
+
+   &__form {
+      max-width: 388px;
+
+      position: relative;
+   }
+
+   &__input {
+      width: 100%;
+      height: 55px;
+      border: 2px solid $decorColor;
+      padding: 20px 210px 20px 30px;
+      outline: none;
+
+      border-radius: 5px;
+      background-color: transparent;
+
+      @include fontGroup($ffRoboto, 14px, 400, 16px, $fontWhite);
+
+      opacity: 0.8;
+
+      &::placeholder {
+         opacity: 0.7;
+      }
+   }
+
+   &__button {
+      border: none;
+      padding: 0 18px;
+
+      background-color: $bgButton;
+      border-radius: 5px;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+
+      @include fontGroup($ffRoboto, 20px, 500, 24px, $fontWhite);
+
+      transition: 0.4s;
+
+      &:hover {
+         background-color: transparentize($bgButton, 0.8);
+      }
+   }
+}
+
+.card {
+   margin: 15px 0 0;
+
+   display: flex;
+   align-items: center;
+
+   &__item {
+      margin: 0 15px 0 0;
+   }
+
+   &__icon {
+      max-height: 20px;
+
+      &_pay-pal {
+         width: 19px;
+      }
+
+      &_master-card {
+         width: 34px;
+      }
+
+      &_visa {
+         width: 47px;
+      }
+   }
+}

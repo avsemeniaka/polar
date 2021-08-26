@@ -1,0 +1,399 @@
+/* ======================== */
+.hero {
+   width: 100%;
+   height: 100vh;
+   padding: 90px 0 0;
+
+   background-color: $bgSection;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &__inner {
+      max-width: 1150px;
+
+      position: relative;
+   }
+
+   &__overline {
+      @include fontGroup($ffRoboto, 14px, 500, 16px, $fontMain);
+      letter-spacing: 0.12em;
+   }
+
+   &__heading {
+      width: 660px / 1120px * 100%;
+      margin: 6px 0 35px;
+
+      @include fontGroup($ffFredokaOne, 57px, 400, 120%, $fontMain);
+
+      &_color-pink {
+         color: $fontDecor;
+      }
+   }
+
+   &__description {
+      width: 525px / 1120px * 100%;
+      margin: 0 0 50px;
+      
+      @include fontGroup($ffHindModurai, 18px, 400, 27px, $fontMain);
+      opacity: 0.6;
+   }
+
+}
+// collafe
+.collage {
+   width: 590px;
+   height: 590px;
+
+   position: absolute;
+   top: 0;
+   right: 0;
+
+   transform: translateY(-25%);
+
+   &__inner {
+      width: 100%;
+      height: 100%;
+      
+      position: relative;
+   }
+
+   &__circle {
+      width: 365px;
+      height: 353px;
+
+      border-radius: 50%;
+      background-color: $colageCircle;
+
+      position: absolute;
+      right: 0;
+      bottom: 0;
+   }
+
+   &__ice-cream {
+      width: 407px;
+      height: 597px;
+
+      background-image: url("../img/content/hero_ice-cream.png");
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      position: absolute;
+      right: -20px;
+      bottom: 41px;
+   }
+
+   &__cream {
+      width: 473px;
+      height: 428px;
+
+      background-image: url("../img/content/hero_ice-cream_smoth.png");
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      position: absolute;
+      right: -49px;
+      bottom: -4px;
+
+      transform: rotate(5deg);
+   }
+
+   &__shadow {
+      width: 173px;
+      height: 15px;
+
+      border-radius: 100%;
+      background-color: $imageShadow;
+      opacity: 0.87;
+
+      filter: blur(10px);
+
+      position: absolute;
+      right: 125px;
+      bottom: -50px;
+   }
+}
+
+/* ======================== */
+.delivery {
+   padding: 100px 0;
+
+   &__list {
+      margin: 0;
+      padding: 0;
+
+      list-style-type: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+}
+
+// card-delivery 
+.card-delivery {
+   width: 250px;
+   padding: 25px;
+
+   display: flex;
+   align-items: center;
+   flex-flow: column;
+
+   &__image {
+      max-width: 54px;
+      max-height: 54px;
+
+      margin: 0 0 25px;
+   }
+
+   &__heading {
+      margin: 0 0 10px;
+      @include fontGroup($ffHindModurai, 20px, 600, 1.15, $fontBlack);
+   }
+
+   &__paragraph {
+
+      opacity: 0.6;
+
+      @include fontGroup($ffHindModurai, 14px, 400, 1.15, $fontBlack);
+      text-align: center;
+   }
+}
+
+/* ======================== */
+.details {
+   padding: 140px 0;
+
+   background-color: $bgSection;
+
+   &__inner {
+      display: flex;
+      align-items: stretch;
+   }
+
+   &__heading {
+      max-width: 350px;
+      margin: 0 0 16px;
+
+      @include fontGroup($ffHindModurai, 44px, 600, 110%, $fontMain)
+   }
+
+   &__paragraph {
+      max-width: 442px;
+      margin: 0 0 35px;
+
+      @include fontGroup($ffRoboto, 16px, 400, 24px, $fontMain);
+      opacity: 0.6;
+   }
+
+   &__collage {
+      max-width: 567px;
+      width: 100%;
+      min-height: 200px;
+
+      position: relative;
+   }
+
+   &__image {
+      width: 567px;
+      height: 544px;
+
+      background-image: url("../img/content/details_img.png");
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      position: absolute;
+      top: -138px;
+      right: -166px;
+   }
+
+   &__shadow {
+
+      width: 283px;
+      height: 27px;
+
+      border-radius: 100%;
+      background-color: $imageShadow;
+      opacity: 0.87;
+
+      filter: blur(10px);
+
+      position: absolute;
+      right: 0;
+      bottom: -90px;
+   }
+}
+
+/* ======================== */ 
+.products {
+   height: 300px;
+}
+
+
+/* ======================== */ 
+.download {
+   padding: 90px 0 170px;
+   background-color: $bgSection;
+
+   &__inner {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+   }
+
+   &__image {
+      height: 625px;
+      
+      position: absolute;
+      left: 0;
+      top: -25px;
+   }
+
+   &__text-box {
+      margin: 0 70px 0 0;
+   }
+
+   &__heading {
+      margin: 0 0 20px;
+      @include fontGroup($ffRoboto, 44px, 500, 110%, $fontBlack)
+   }
+
+   &__paragraph {
+      max-width: 600px;
+      margin: 0 0 30px;
+
+      @include fontGroup($ffRoboto, 18px, 400, 21px, $fontMain);
+      opacity: 0.7;
+   }
+
+   &__list {
+      margin: 0 0 40px;
+      padding: 0;
+      list-style-type: none;
+
+      @include fontGroup($ffRoboto, 22px, 400, 26px, $fontBlack);
+   }
+
+   &__item {
+      margin: 0 0 19px;
+      display: flex;
+      align-items: center;
+
+      &-icon {
+         width: 30px;
+         height: 30px;
+         margin: 0 10px 0 0;
+         
+         background-color: $bgWhite;
+         border-radius: 3px;
+
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+   } 
+   
+   &__icon {
+      max-width: 16px;
+      max-height: 17px;
+   }
+
+   &__links {
+      display: flex;
+      align-items: center;
+   }
+   
+   &__link {
+      margin: 0 15px 0 0;
+
+      transition: 0.4s;
+
+      &:hover {
+         transform: translateY(-5px);
+      }
+
+      &-image {
+         max-width: 173px;
+
+         display: block;
+      }
+   }
+   
+}
+
+/* ======================== */ 
+.question {
+   padding: 190px 0 130px;
+
+   &__inner {
+      max-width: 670px;
+      margin: 0 auto;
+      padding: 0 15px;
+   }
+
+   &__heading {
+      max-width: 522px;
+      margin: 0 auto;
+
+      @include fontGroup($ffRoboto, 44px, 500, 52px, $fontBlack);
+      text-align: center;
+   }
+
+   &__form {
+      max-width: 640px;
+      margin: 40px 0 0;
+
+      position: relative;
+   }
+
+   &__input {
+      width: 100%;
+      height: 74px;
+      border: none;
+      padding: 30px 170px 30px 30px;
+      outline: none;
+
+      background-color: $fontLight;
+
+      @include fontGroup($ffRoboto, 14px, 400, 16px, $fontMain);
+
+      transition: 0.4s;
+
+      &:focus {
+         background-color: $bgSection;
+      }
+   }
+
+   &__button {
+      border: 2px solid transparent;
+      padding: 0 30px 0 45px;
+
+      background-color: $bgButton;
+      border-radius: 5px;
+
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+
+      font-family: $ffRoboto;
+      font-size: 20px;
+      font-weight: 500;
+      color: $fontWhite;
+
+      transition: 0.6s;
+
+      &:hover {
+         border: 2px solid $bgButton;
+         padding: 0 45px 0 30px;
+         background-color: transparent;
+         color: $fontDecor;
+      }
+   }
+}
